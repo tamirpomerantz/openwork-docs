@@ -107,7 +107,33 @@
 
             <div class="space-y-8">
                 <div>
-                    <h2 class="text-3xl font-semibold mb-3">Providers</h2>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-4">What is an API key and why does Openwork need it?</h2>
+                    <p class="text-mute text-base md:text-lg leading-relaxed mb-4">
+                        Openwork doesn't include its own AI model. Instead, it connects to an AI provider you choose, using an API key that belongs to you.
+                    </p>
+                    <p class="text-mute text-base md:text-lg leading-relaxed mb-4">
+                        An API key is a private token that:
+                    </p>
+                    <ul class="text-mute text-base md:text-lg leading-relaxed space-y-2 list-disc list-inside mb-4">
+                        <li>Identifies you to the AI provider</li>
+                        <li>Lets Openwork send requests on your behalf</li>
+                        <li>Bills usage directly to your account with that provider</li>
+                    </ul>
+                    <p class="text-mute text-base md:text-lg leading-relaxed mb-4">
+                        Openwork uses your API key only to:
+                    </p>
+                    <ul class="text-mute text-base md:text-lg leading-relaxed space-y-2 list-disc list-inside mb-4">
+                        <li>Generate text (summaries, drafts, explanations)</li>
+                        <li>Understand files and instructions</li>
+                        <li>Plan and execute actions you approve</li>
+                    </ul>
+                    <p class="text-mute text-base md:text-lg leading-relaxed mb-6">
+                        Your key is stored locally on your machine and is never shared with Openwork servers.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-3">Providers</h2>
                     <p class="text-mute mb-6">Select a provider to view setup instructions:</p>
                     
                     <div class="grid grid-cols-1 gap-6">
