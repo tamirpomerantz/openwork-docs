@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI API Key - Openwork Docs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          darkMode: 'class',
+          theme: {
+            extend: {
+              fontFamily: {
+                'sans': ['DM Sans', 'sans-serif'],
+              },
+              colors: {
+                'dark-bg': {
+                  'primary': '#0F1315',
+                  'secondary': '#0C0F11',
+                },
+                'mute': '#9EADA9',
+                'accent': '#394E48',
+              },
+              backgroundColor: {
+                'dark': '#0F1315',
+                'dark-alt': '#0C0F11',
+              },
+              textColor: {
+                'mute': '#9EADA9',
+              },
+              borderColor: {
+                'dark': '#394E48',
+                'mute': '#9EADA9',
+              },
+              zIndex: {
+                'header': '50',
+                'overlay': '100',
+                'modal': '200',
+                'popover': '300',
+                'tooltip': '400',
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg-primary text-white font-sans">
+    <div>
+        <!-- Sidebar -->
+        <aside class="fixed top-0 left-0 w-64 h-screen bg-dark-bg-secondary p-8 flex flex-col overflow-y-auto">
+            <div class="mb-12">
+                <img src="logo.svg" alt="Openwork" class="mb-4 w-48">
+                <p class="text-mute text-sm">API Key Setup Guides</p>
+            </div>
+            
+            <nav class="flex-1">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="index.html" class="block py-2 px-3 text-mute hover:text-white transition-colors">
+                            Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a href="openai.html" class="block py-2 px-3 text-white bg-white/5 hover:text-mute transition-colors">
+                            OpenAI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="anthropic.html" class="block py-2 px-3 text-mute hover:text-white transition-colors">
+                            Anthropic
+                        </a>
+                    </li>
+                    <li>
+                        <a href="google-gemini.html" class="block py-2 px-3 text-mute hover:text-white transition-colors">
+                            Google Gemini
+                        </a>
+                    </li>
+                    <li>
+                        <a href="xai.html" class="block py-2 px-3 text-mute hover:text-white transition-colors">
+                            xAI
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mt-auto pt-8">
+                <p class="text-mute text-xs">
+                    <a href="https://www.openwork.me/" class="text-white underline hover:text-mute" target="_blank" rel="noopener noreferrer">Openwork™</a> is an open source AI desktop agent that runs on your computer.
+                </p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="ml-64 p-12">
+            <div class="max-w-4xl mx-auto">
+            <div class="mb-12 mt-12">
+                <img src="icon-openai.svg" alt="OpenAI" class="w-32 h-32 mb-4">
+                <h1 class="text-5xl font-bold mb-4">OpenAI API Key</h1>
+                <p class="text-mute text-lg leading-relaxed">
+                    Learn how to obtain your OpenAI API key to use GPT models with Openwork™.
+                </p>
+            </div>
+
+            <div class="prose prose-invert max-w-none space-y-8">
+                <section>
+                    <h2 class="text-3xl font-semibold mb-4">Step 1: Create an OpenAI Account</h2>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        Navigate to <a href="https://platform.openai.com" class="text-white hover:text-mute underline">platform.openai.com</a> and click the "Sign up" button. You can register using your email address or sign up through your Google, Microsoft, or Apple account for faster access.
+                    </p>
+                    <img src="images/openai-01.png" alt="OpenAI sign up page" class="w-full rounded-lg mb-4">
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        During registration, you'll need to verify your email address and provide a phone number for SMS verification. This two-factor authentication helps secure your account and prevent abuse of the API services.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-semibold mb-4">Step 2: Access the API Dashboard</h2>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        Once your account is verified and you're logged in, you'll be directed to the OpenAI Platform dashboard. If you're not automatically redirected, go to <a href="https://platform.openai.com" class="text-white hover:text-mute underline">platform.openai.com</a> and sign in with your credentials. You will need to create an organization to generate API keys and start building.
+                    </p>
+                    <img src="images/openai-02.png" alt="OpenAI dashboard" class="w-full rounded-lg mb-4">
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        You will be prompted to invite your team, and then to make your first API call. After this step, you will be prompted to add some credits or billing details. You can always skip this step and click 'I'll do this later.'
+                    </p>
+                    <img src="images/openai-03.png" alt="OpenAI billing prompt" class="w-full rounded-lg mb-4">
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-semibold mb-4">Step 3: Navigate to your Dashboard</h2>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        In the left sidebar of your dashboard, locate and click on "API keys". You can also access this directly at <a href="https://platform.openai.com/api-keys" class="text-white hover:text-mute underline">platform.openai.com/api-keys</a>.
+                    </p>
+                    <img src="images/openai-04.png" alt="OpenAI API keys section" class="w-full rounded-lg mb-4">
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        This section displays all your existing API keys (if any) and allows you to create new ones or revoke old ones.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-semibold mb-4">Step 4: Generate a New API Key</h2>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        Click the "Create new secret key" button. A dialog box will appear where you can:
+                    </p>
+                    <img src="images/openai-05.png" alt="Create new API key dialog" class="w-full rounded-lg mb-4">
+                    <ul class="text-mute text-lg leading-relaxed space-y-2 list-disc list-inside mb-4">
+                        <li><strong class="text-white">Name your key</strong> (optional but recommended): Use descriptive names like "Production App" or "Development Testing" to help you identify different keys for different purposes</li>
+                        <li><strong class="text-white">Set permissions</strong>: Choose whether this key should have full access or restricted permissions</li>
+                        <li><strong class="text-white">Configure project association</strong>: Link the key to specific projects if you're managing multiple applications</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-semibold mb-4">Step 5: Save Your API Key Immediately</h2>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        <strong class="text-white">Critical:</strong> Once generated, your API key will be displayed only once. Copy it immediately and store it securely. OpenAI cannot retrieve or display this key again for security reasons.
+                    </p>
+                    <img src="images/openai-06.png" alt="OpenAI API key displayed" class="w-full rounded-lg mb-4">
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        Best practices for storing your key:
+                    </p>
+                    <ul class="text-mute text-lg leading-relaxed space-y-2 list-disc list-inside mb-4">
+                        <li>Use environment variables in your development environment</li>
+                        <li>Store in secure key management systems (AWS Secrets Manager, Azure Key Vault, etc.)</li>
+                        <li>Never commit API keys to version control systems like Git</li>
+                        <li>Avoid hardcoding keys directly in your source code</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-semibold mb-4">Step 6: Set Up Billing</h2>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        Before you can use your API key, you need to add billing information:
+                    </p>
+                    <ul class="text-mute text-lg leading-relaxed space-y-2 list-disc list-inside mb-4">
+                        <li>Click on "Settings" in the sidebar, then select "Billing"</li>
+                        <li>Click "Add payment method" and enter your credit card details</li>
+                        <li>Set up usage limits (recommended for new users):
+                            <ul class="list-disc list-inside ml-6 mt-2 space-y-1">
+                                <li>Configure monthly budget limits to prevent unexpected charges</li>
+                                <li>Set up email alerts for when you approach your limits</li>
+                                <li>Review the pricing page to understand costs per model and token usage</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="images/openai-07.png" alt="OpenAI billing settings" class="w-full rounded-lg mb-4">
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        <strong class="text-white">Note:</strong> If you add Credits to your account at the start, then you'll be prompted to add your card details and set up billing.
+                    </p>
+                </section>
+            </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

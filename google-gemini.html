@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Gemini API Key - Openwork Docs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          darkMode: 'class',
+          theme: {
+            extend: {
+              fontFamily: {
+                'sans': ['DM Sans', 'sans-serif'],
+              },
+              colors: {
+                'dark-bg': {
+                  'primary': '#0F1315',
+                  'secondary': '#0C0F11',
+                },
+                'mute': '#9EADA9',
+                'accent': '#394E48',
+              },
+              backgroundColor: {
+                'dark': '#0F1315',
+                'dark-alt': '#0C0F11',
+              },
+              textColor: {
+                'mute': '#9EADA9',
+              },
+              borderColor: {
+                'dark': '#394E48',
+                'mute': '#9EADA9',
+              },
+              zIndex: {
+                'header': '50',
+                'overlay': '100',
+                'modal': '200',
+                'popover': '300',
+                'tooltip': '400',
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg-primary text-white font-sans">
+    <div>
+        <!-- Sidebar -->
+        <aside class="fixed top-0 left-0 w-64 h-screen bg-dark-bg-secondary p-8 flex flex-col overflow-y-auto">
+            <div class="mb-12">
+                <img src="logo.svg" alt="Openwork" class="mb-4 w-48">
+                <p class="text-mute text-sm">API Key Setup Guides</p>
+            </div>
+            
+            <nav class="flex-1">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="index.html" class="block py-2 px-3 text-mute hover:text-white transition-colors">
+                            Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a href="openai.html" class="block py-2 px-3 text-mute hover:text-white transition-colors">
+                            OpenAI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="anthropic.html" class="block py-2 px-3 text-mute hover:text-white transition-colors">
+                            Anthropic
+                        </a>
+                    </li>
+                    <li>
+                        <a href="google-gemini.html" class="block py-2 px-3 text-white bg-white/5 hover:text-mute transition-colors">
+                            Google Gemini
+                        </a>
+                    </li>
+                    <li>
+                        <a href="xai.html" class="block py-2 px-3 text-mute hover:text-white transition-colors">
+                            xAI
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mt-auto pt-8">
+                <p class="text-mute text-xs">
+                    <a href="https://www.openwork.me/" class="text-white underline hover:text-mute" target="_blank" rel="noopener noreferrer">Openwork™</a> is an open source AI desktop agent that runs on your computer.
+                </p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="ml-64 p-12">
+            <div class="max-w-4xl mx-auto">
+            <div class="mb-12 mt-12">
+                <img src="icon-gemini.svg" alt="Google Gemini" class="w-32 h-32 mb-4">
+                <h1 class="text-5xl font-bold mb-4">Google Gemini API Key</h1>
+                <p class="text-mute text-lg leading-relaxed">
+                    Learn how to obtain your Google Gemini API key to use Gemini models with Openwork™.
+                </p>
+            </div>
+
+            <div class="prose prose-invert max-w-none space-y-8">
+                <section>
+                    <h2 class="text-3xl font-semibold mb-4">Step 1: Login to your Google account</h2>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        You should see the sign in button on the top right corner of Google's home page.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-semibold mb-4">Step 2: Visit the "Google AI Studio"</h2>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        You can find this landing page <a href="https://aistudio.google.com" class="text-white hover:text-mute underline">here</a>. You'd then need to click on the "Gemini API" tab or click on the "Learn more about the Gemini API" button.
+                    </p>
+                    <img src="images/google-01.png" alt="Gemini API page - click start building" class="w-full rounded-lg mb-4">
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        Alternatively, you can visit the <a href="https://aistudio.google.com/app/apikey" class="text-white hover:text-mute underline">Gemini API landing page</a> directly.
+                    </p>
+                    <img src="images/google-02.png" alt="Gemini API quickstart - create API key" class="w-full rounded-lg mb-4">
+                    <img src="images/google-03.png" alt="Welcome page to Google AI Studio" class="w-full rounded-lg mb-4">
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-semibold mb-4">Step 3: Click on "Get API key in Google AI Studio"</h2>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        This should appear as a button on the center of the page.
+                    </p>
+                    <img src="images/google-04.png" alt="Google AI Studio API key page" class="w-full rounded-lg mb-4">
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-semibold mb-4">Step 4: Review and approve the terms of service</h2>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        You should then see a pop-up that asks you to consent to Google APIs Terms of Service and Gemini API Additional Terms of Service.
+                    </p>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        While not required, you can also opt in to receive emails that keep you up to date on Google AI and ask you to participate in specific research studies for Google AI.
+                    </p>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        Go ahead and check off the first box (and the others if you'd like) and click Continue.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-semibold mb-4">Step 5: Create your API key</h2>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        You can now click "Create API key."
+                    </p>
+                    <img src="images/google-05.png" alt="Create a new API key" class="w-full rounded-lg mb-4">
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        You'll then have the option to create an API key in a new project or via an existing project.
+                    </p>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        Once you've chosen one of these options, your API key should be auto-generated!
+                    </p>
+                    <img src="images/google-06.png" alt="API details - copy the key" class="w-full rounded-lg mb-4">
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        <strong class="text-white">Remember:</strong> Store this API key in a secure location to prevent unauthorized access.
+                    </p>
+                </section>
+            </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

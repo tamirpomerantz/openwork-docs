@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthropic API Key - Openwork Docs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          darkMode: 'class',
+          theme: {
+            extend: {
+              fontFamily: {
+                'sans': ['DM Sans', 'sans-serif'],
+              },
+              colors: {
+                'dark-bg': {
+                  'primary': '#0F1315',
+                  'secondary': '#0C0F11',
+                },
+                'mute': '#9EADA9',
+                'accent': '#394E48',
+              },
+              backgroundColor: {
+                'dark': '#0F1315',
+                'dark-alt': '#0C0F11',
+              },
+              textColor: {
+                'mute': '#9EADA9',
+              },
+              borderColor: {
+                'dark': '#394E48',
+                'mute': '#9EADA9',
+              },
+              zIndex: {
+                'header': '50',
+                'overlay': '100',
+                'modal': '200',
+                'popover': '300',
+                'tooltip': '400',
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg-primary text-white font-sans">
+    <div>
+        <!-- Sidebar -->
+        <aside class="fixed top-0 left-0 w-64 h-screen bg-dark-bg-secondary p-8 flex flex-col overflow-y-auto">
+            <div class="mb-12">
+                <img src="logo.svg" alt="Openwork" class="mb-4 w-48">
+                <p class="text-mute text-sm">API Key Setup Guides</p>
+            </div>
+            
+            <nav class="flex-1">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="index.html" class="block py-2 px-3 text-mute hover:text-white transition-colors">
+                            Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a href="openai.html" class="block py-2 px-3 text-mute hover:text-white transition-colors">
+                            OpenAI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="anthropic.html" class="block py-2 px-3 text-white bg-white/5 hover:text-mute transition-colors">
+                            Anthropic
+                        </a>
+                    </li>
+                    <li>
+                        <a href="google-gemini.html" class="block py-2 px-3 text-mute hover:text-white transition-colors">
+                            Google Gemini
+                        </a>
+                    </li>
+                    <li>
+                        <a href="xai.html" class="block py-2 px-3 text-mute hover:text-white transition-colors">
+                            xAI
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mt-auto pt-8">
+                <p class="text-mute text-xs">
+                    <a href="https://www.openwork.me/" class="text-white underline hover:text-mute" target="_blank" rel="noopener noreferrer">Openwork™</a> is an open source AI desktop agent that runs on your computer.
+                </p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="ml-64 p-12">
+            <div class="max-w-4xl mx-auto">
+            <div class="mb-12 mt-12">
+                <img src="icon-claude.svg" alt="Claude" class="w-32 h-32 mb-4">
+                <h1 class="text-5xl font-bold mb-4">Anthropic API Key</h1>
+                <p class="text-mute text-lg leading-relaxed">
+                    Learn how to obtain your Anthropic API key to use Claude models with Openwork™.
+                </p>
+            </div>
+
+            <div class="prose prose-invert max-w-none space-y-8">
+                <section>
+                    <h2 class="text-3xl font-semibold mb-4">Step 1: Create an Account</h2>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        Sign up for an account <a href="https://console.anthropic.com" class="text-white hover:text-mute underline">here</a>.
+                    </p>
+                    <img src="images/claude-01.png" alt="Set up organization" class="w-full rounded-lg mb-4">
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-semibold mb-4">Step 2: Generate an API Key</h2>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        After creating an account, click your Profile in the top right corner and select API Keys.
+                    </p>
+                    <img src="images/claude-02.png" alt="Organization view" class="w-full rounded-lg mb-4">
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        On the next screen, click Create Key and type in a name for your key. Hit Create Key after naming your key.
+                    </p>
+                    <img src="images/claude-03.png" alt="Create an API key" class="w-full rounded-lg mb-4">
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        <strong class="text-white">IMPORTANT:</strong> Copy your key and store it in a safe location. You won't be able to re-access the key in the future.
+                    </p>
+                    <img src="images/claude-04.png" alt="Save API key" class="w-full rounded-lg mb-4">
+                </section>
+
+                <section>
+                    <h2 class="text-3xl font-semibold mb-4">Step 3: Set Up Billing</h2>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        From the same screen in Step 2, select Plans & Billing in the left navigation.
+                    </p>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        On this screen, you have 2 options:
+                    </p>
+                    <ul class="text-mute text-lg leading-relaxed space-y-2 list-disc list-inside mb-4">
+                        <li>If you recently created a new account, you may have credits to test the API without setting up a paid plan. To claim the credits, you'll need to provide your phone number. If you go this route, you can skip the remainder of this guide.</li>
+                        <li>If you don't have credits, you'll need to upgrade to a paid plan. You can see information about plans if you hit Select Plan.</li>
+                    </ul>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        If you select the Scale plan, you'll be prompted to talk to Anthropic's sales team and the rest of this guide won't apply. For this guide, we'll continue with the Build plan.
+                    </p>
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        After continuing in the flow by selecting Build, you'll be prompted to enter a credit card and purchase an initial amount of credits. You can also set up an auto-reload of credits on this page.
+                    </p>
+                    <img src="images/claude-05.png" alt="Add credits on billing" class="w-full rounded-lg mb-4">
+                    <p class="text-mute text-lg leading-relaxed mb-4">
+                        After hitting Purchase Credits, you'll be taken to a dashboard, which you can use to manage your usage and billing going forward.
+                    </p>
+                </section>
+            </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
